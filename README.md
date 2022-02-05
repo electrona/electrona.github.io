@@ -1,4 +1,3 @@
 # electrona.github.io
 
-## Eric Thomas
-Software Developer
+## The home of **ERICTHOMAS.CA**
