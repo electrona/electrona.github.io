@@ -1,3 +1,3 @@
-# electrona.github.io
+# ericthomasca.github.io
 
 ## The home of **ERICTHOMAS.CA**
