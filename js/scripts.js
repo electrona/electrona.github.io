@@ -31,4 +31,9 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Check if the path is /json and redirect to /resume.json
+    if (window.location.pathname === '/json') {
+        window.location.replace('/resume.json');
+    }
+
 });
