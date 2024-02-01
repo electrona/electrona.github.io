@@ -31,9 +31,12 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Check if the path is /json and redirect to /resume.json
-    if (window.location.pathname === '/json') {
-        window.location.replace('/resume.json');
-    }
+    // Intercept fetch requests and respond with resume.json content for /json
+    window.addEventListener('fetch', async (event) => {
+        const url = new URL(event.request.url);
+        if (url.pathname === '/json') {
+            event.respondWith(fetch('/resume.json'));
+        }
+    });
 
 });
